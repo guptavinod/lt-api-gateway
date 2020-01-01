@@ -4,7 +4,8 @@
 
 ## TEST APPLICATION 
 
-1. Build Docker Image of api-gateway 
+1. Build Docker Image of api-gateway and push using following:   
+docker push guptavinodkumar/api-gateway:0.0.1-RELEASE
 2. Create network (if not already created) --> docker network create locationtracker
    
 3. RUN api gateway application:   
