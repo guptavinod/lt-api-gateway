@@ -5,11 +5,12 @@
 ## TEST APPLICATION 
 
 1. Build Docker Image of api-gateway and push using following:   
-docker push guptavinodkumar/api-gateway:0.0.1-RELEASE
+docker push guptavinodkumar/lt-api-gateway:0.0.1-RELEASE
+
 2. Create network (if not already created) --> docker network create locationtracker
    
 3. RUN api gateway application:   
-docker run -d --network locationtracker -p 8080:8080 --name apigateway --env position-tracker-url=http://positiontracker:8090 guptavinodkumar/api-gateway:0.0.1-RELEASE
+docker run -d --network locationtracker -p 8080:8080 --name apigateway --env position-tracker-url=http://positiontracker:8090 guptavinodkumar/lt-api-gateway:0.0.1-RELEASE
 
 
 
